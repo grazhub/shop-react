@@ -1,0 +1,22 @@
+:root {
+    --main-bg-color: #556b2f;
+    --main-bg-logout-color: #cac7c3;
+    --main-font-color: #fdfff0;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: var(--main-bg-color);
+    height: 100%;
+    color: var(--main-font-color);
+}
+
+.tab {
+    margin-right: 20px;
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+.activeTab {
+    font-weight: bold;
+}

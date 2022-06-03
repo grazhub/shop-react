@@ -1,0 +1,33 @@
+:root {
+    --main-bg-color: #556b2f;
+    --main-bg-logout-color: #cac7c3;
+    --main-font-color: #fdfff0;
+}
+
+.header {
+    height: 60px;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    color: var(--main-font-color);
+}
+.header.logout {
+    background-color: var(--main-bg-logout-color);
+}
+.header__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.pageLink {
+    margin-right: 20px;
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+.activePageLink {
+    font-weight: bold;
+}
