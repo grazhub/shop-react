@@ -1,22 +1,21 @@
-:root {
-    --main-bg-color: #556b2f;
-    --main-bg-logout-color: #cac7c3;
-    --main-font-color: #fdfff0;
-}
-
 .sidebar {
     width: 200px;
-    background-color: var(--main-bg-color);
     height: 100%;
-    color: var(--main-font-color);
+    color: var(--second-font-color);
+    border-right: var(--main-bg-logout-color) 1px solid;
+    box-sizing: border-box;
 }
 
-.tab {
-    margin-right: 20px;
-    color: var(--main-font-color);
-    text-decoration: none;
+.sidebar .sidebar__folder,
+.sidebar .sidebar__list .sidebar__list_item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.activeTab {
-    font-weight: bold;
+.sidebar .sidebar__list .sidebar__list_item {
+    padding-left: 24px;
+}
+.sidebar .sidebar__list .sidebar__list_item.active {
+    background-color: var(--main-bg-logout-color);
 }
